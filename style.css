@@ -31,10 +31,21 @@ h4 {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.responsive-image {
+  object-fit: cover;
 }
 
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .responsive-image {
+    aspect-ratio: 1/1;
   }
 }
